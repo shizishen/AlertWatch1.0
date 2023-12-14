@@ -1,80 +1,35 @@
-# android-mjpeg-view
-Android custom View for displaying MJPEG stream.
+# AlertWatch
+基于Esp32-cam或空闲手机的远程监控安全系统（AlertWatch）可以提供危险行为的实时检测和预警功能。
 
-- This custom view only requires a specific http(s) url.
-- Supported image scaling methods are fit width, fit height, original size, stretch and best fit.
-- Only boundary is used to separate each jpeg image (i.e. each frame) from a stream. Content-length is ignored.
-- A boundary must be specified in an HTTP headr (Content-type), otherwise a default boundary pattern will be used.
+The remote monitoring security system (AlertWatch) based on Esp32-cam or idle mobile phone can provide real-time detection and warning functions of dangerous actions.
 
-Basic usage<br/>
-1. This library is hosted on Maven Central, so make sure you added `mavenCentral()` as one of repositories
-```gradle
-dependencyResolutionManagement {
-    ...
-    repositories {
-        ...
-        mavenCentral()
-    }
-}
-```
+# App运行截图
 
-2. Include a library in to your project by adding this to <b>app level</b> build.gradle file.
-```gradle
-dependencies {
-    ...
-    implementation 'com.perthcpe23.dev:android-mjpeg-view:1.1.2'
-}
-```
+<div style="display: flex;">
+    <img src="https://github.com/shizishen/AlertWatch/assets/85082613/5a99877f-89bb-4ab0-98bd-0c135c0e103a" alt="欢迎界面" style="width: 200px; height: auto;">
+    <img src="https://github.com/shizishen/AlertWatch/assets/85082613/24d592c2-584e-489c-9b00-02b9eb60c865" alt="添加设备" style="width: 200px; height: auto;">
+  <img src="https://github.com/shizishen/AlertWatch/assets/85082613/4a4d3a79-4a2a-4604-8a9c-9b49ca354898" alt="主界面" style="width:208px; height: auto;">
+  <img src="https://github.com/shizishen/AlertWatch/assets/85082613/1b6435c8-66ab-4157-9d25-75b9e36bf8a4" alt="手机摄像头测试界面" style="width: 200px; height: auto;">
+</div>
 
-3. Add a view to XML layout:
-````xml
-<com.longdo.mjpegviewer.MjpegView
-    android:id="@+id/mjpegview"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
-````
 
-4. Specify mjpeg source and start streaming
-````java
-MjpegView viewer = (MjpegView) findViewById(R.id.mjpegview);
-viewer.setMode(MjpegView.MODE_FIT_WIDTH);
-viewer.setAdjustHeight(true);
-viewer.setSupportPinchZoomAndPan(true);
-viewer.setUrl("https://app.punyapat.me/mjpeg-server/mjpeg");
-viewer.startStream();
+# 项目流程图
+<div style="display: flex;">
+    <img src="https://github.com/shizishen/AlertWatch/assets/85082613/ada341d3-db62-406e-ac94-9214f6b20747" alt="欢迎界面" style="width: 200px; height: auto;">
+</div>
 
-//when user leaves application
-viewer.stopStream();
-````
+# 后续计划
 
-5. Or Android Compose (skip #3 and #4)
-```kotlin
-MyApplicationTheme {
-    Surface(
-        modifier = Modifier.fillMaxSize(),
-    ) {
-        AndroidView(
-            modifier = Modifier.fillMaxSize(),
-            factory = { context ->
-                MjpegView(context).apply {
-                    mode = MjpegView.MODE_FIT_WIDTH
-                    isAdjustHeight = true
-                    supportPinchZoomAndPan = true
-                    setUrl("https://app.punyapat.me/mjpeg-server/mjpeg")
-                    startStream()
-                }
-            },
-        )
-    }
-}
-```
+1. 上传代码
+2. 增加更多编解码（添加FFMPEG）
+3. 创建客户-服务端，将推理部署在服务器端
 
-6. Don't forget to add internet access permission to Android manifests file
-````java
-<uses-permission android:name="android.permission.INTERNET" />
-````
 
-* You can also download .aar at https://github.com/perthcpe23/android-mjpeg-view/tree/master/aar
+# 联系方式(请注明身份，联系目的)
+邮箱：475967550@qq.com
+ 
+# 免责申明
+&bull; 本软件提供的所有内容，仅可用作学习交流使用，未经版权方以及原作者授权，禁止用于商业目的以及其他用途，谢谢
 
-# Contact
-perth.s28@gmail.com
+&bull; 我们强烈建议您详细阅读并遵守许可协议的规定，以保障您与他人的权益和合法使用
+
