@@ -24,7 +24,7 @@ The remote monitoring security system (AlertWatch) based on Esp32-cam or idle mo
 
 1. 上传代码   ✔️  
 2. 增加更多编解码（添加FFMPEG）
-3. 创建客户-服务端，将推理部署在服务器端
+3. 创建[客户-服务端-AlertWatch2.0](https://github.com/shizishen/AlertWatch2.0 “AlertWatch2.0”)，将推理部署在服务器端
 
 
 # 联系方式(请注明身份，联系目的)
