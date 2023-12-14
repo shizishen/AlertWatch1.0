@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/layoutBackground"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="后台服务" />
+
+
+    <com.longdo.mjpegviewer.MjpegView
+        android:id="@+id/mjpegview1"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:background="#000" />
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:id="@+id/imageView"/>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#156"
+        android:alpha="0.75"
+        android:gravity="center"
+        android:text="结果正在推理中 . . ."
+        android:textColor="#000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/test_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="相机测试"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape"/>
+
+        <Button
+            android:id="@+id/how_use"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="使用指南"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape"/>
+
+        <Button
+            android:id="@+id/add_fac"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="添加设备"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipText"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:paddingStart="7dp"
+        android:text="IP:  https://app.punyapat.me/mjpeg-server/mjpeg"
+        android:textColor="@color/black"
+        android:background="@drawable/text_shape"/>
+    <TextView
+        android:id="@+id/warnText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="警告内容:"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:background="@drawable/text_shape"/>
+
+
+</LinearLayout>

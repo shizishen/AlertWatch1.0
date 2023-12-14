@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AlertWatch</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="howuse">
+    使用方法:\n
+        \n
+        后台监控:打开开关后,当退出当前页面,监控报警功能将继续执行,有危险报警信息时,会及时通知.\n
+        \n
+        相机测试:打开手机摄像头,测试动作识别推理效果.\n
+        \n
+        添加设备:输入摄像头IP地址,点击保存\n
+        \n
+        按钮下方显示当前IP地址\n
+        \n
+        注意: 本app目前仅支持MJPEG编码格式,其他编码格式的数据等待更新.\n
+        动作类别数是Kinetics 400数据集的400个动作类别,模型会根据输入的图像帧推理出输出概率最高的前5个动作类别,所以即使画面中没有人,也会输出五个类别
+
+    </string>
+    <string name="warning">Warning</string>
+</resources>
