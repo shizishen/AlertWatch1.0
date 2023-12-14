@@ -20,7 +20,7 @@ The remote monitoring security system (AlertWatch) based on Esp32-cam or idle mo
 
 # 后续计划
 
-1. 上传代码
+1. 上传代码  - [x] 
 2. 增加更多编解码（添加FFMPEG）
 3. 创建客户-服务端，将推理部署在服务器端
 
