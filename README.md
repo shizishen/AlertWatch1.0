@@ -13,7 +13,7 @@ The remote monitoring security system (AlertWatch) based on Esp32-cam or idle mo
   <img src="https://github.com/shizishen/AlertWatch1.0/assets/85082613/063b2202-49cf-4095-9640-7f139ac62f05" alt="手机摄像头测试界面" style="width: 200px; height: auto;">
 </div>
 
-![图片16](https://github.com/shizishen/AlertWatch1.0/assets/85082613/dff609f0-f1dc-4a3f-ac55-3281e6b78887)
+
 
 # 项目流程图
 <div style="display: flex;">
