@@ -2,6 +2,12 @@
 基于Esp32-cam或空闲手机的远程监控安全系统（AlertWatch）可以提供危险行为的实时检测和预警功能。
 
 The remote monitoring security system (AlertWatch) based on Esp32-cam or idle mobile phone can provide real-time detection and warning functions of dangerous actions.
+# 后续计划
+
+1. 上传代码   ✔️
+2. 技术分析（教程）
+3. 增加更多编解码（添加FFMPEG）
+4. 创建[客户-服务端-AlertWatch2.0](https://github.com/shizishen/AlertWatch2.0)，将推理部署在服务器端
 
 # App运行截图
 
@@ -20,11 +26,7 @@ The remote monitoring security system (AlertWatch) based on Esp32-cam or idle mo
     <img src="https://github.com/shizishen/AlertWatch1.0/assets/85082613/dff609f0-f1dc-4a3f-ac55-3281e6b78887" alt="流程图" style="width: 200px; height: auto;">
 </div>
 
-# 后续计划
 
-1. 上传代码   ✔️  
-2. 增加更多编解码（添加FFMPEG）
-3. 创建[客户-服务端-AlertWatch2.0](https://github.com/shizishen/AlertWatch2.0)，将推理部署在服务器端
 
 
 # 联系方式(请注明身份，联系目的)
